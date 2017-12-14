@@ -1,0 +1,13 @@
+int[] array;
+
+indexA - indexB = n: n 是 [A,B) 或者 (A,B] 之间的元素个数。
+    常用与拷贝 A 到 B 之间子数组时计算数组长度。
+
+indexA + len = indexB: C 是 A 后 len 个元素之后的第一个元素下标，也就是 [A,B-1] 子数组的长度是len。
+    常用与计算从 A 跳过指长度后的开始位置。
+
+arraySize - indexA = len: len 是从 A 开始到数组最后的元素个数，也就是 [A,last] 。
+    常用与计算下标 A 后（包含 A ）还有多少个元素。
+
+arraySize - len = indexA: A 的含义可以从上面的公式推导。
+    常用与从数组后面，获取指定长度子数组时，开始的下标位置。
